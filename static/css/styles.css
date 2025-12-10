@@ -1,0 +1,11 @@
+body { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; background:#f6f7fb; margin:0; }
+.container { max-width:720px; margin:40px auto; padding:16px; }
+header h1 { margin:0 0 12px 0; }
+.card { background:white; padding:16px; border-radius:8px; box-shadow:0 6px 18px rgba(0,0,0,0.06); }
+#addTaskForm { display:flex; gap:8px; margin-bottom:12px; }
+#addTaskForm input { flex:1; padding:8px; border:1px solid #ddd; border-radius:6px; }
+#addTaskForm button { padding:8px 12px; border-radius:6px; border: none; cursor:pointer; }
+#tasks { list-style:none; padding:0; }
+#tasks li { padding:8px 0; border-bottom:1px solid #f0f0f0; }
+.title { margin-left:8px; }
+.meta { color:#666; margin-left:8px; font-size:0.85em; }

@@ -1,0 +1,27 @@
+{{ define "content" }}
+<section class="card">
+<form id="addTaskForm">
+<input type="text" id="title" name="title" placeholder="New task title" required />
+<button type="submit">Add Task</button>
+</form>
+
+
+<h2>Manoj's Tasks</h2>
+<ul id="tasks">
+{{ range .Tasks }}
+<li data-id="{{ .ID }}">
+<label>
+<input type="checkbox" {{ if .Done }}checked{{ end }} class="toggle" />
+<span class="title">{{ .Title }}</span>
+<small class="meta">{{ .CreatedAt.Format "02 Jan 2006 15:04" }}</small>
+</label>
+</li>
+{{ else }}
+<li>No tasks yet.</li>
+{{ end }}
+</ul>
+</section>
+{{ end }}
+
+
+{{ template "layout" . }}
