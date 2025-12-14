@@ -21,5 +21,11 @@ A minimal Go web application (TaskBoard) built with the standard library. Intend
 
 
 ```bash
-go run main.go
-# open http://localhost:8080
+# go build -o main .
+# ./main
+# open http://localhost:8585
+
+
+## in docker
+docker build -t youknowmanoj/go-web-app:v1 . 
+docker run -p 8585:8585 -it youknowmanoj/go-web-app:v2
